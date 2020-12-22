@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		Homepage
+	</title>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="Homepage.css">
+      <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+</head>
+
+<body>
+<div class="pgname">Resume Builder</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+	
+				<nav class="navbar navbar-default">
+		
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-target=".navbar-collapse"  data-toggle="collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>	
+					</div>
+					
+					<div class="navbar-collapse collapse">
+						<ul class="nav nav-pills nav-justified">
+							<li class="active">
+								<a href="#hometab" data-toggle="tab">
+								<span class="glyphicon glyphicon-home"></span> 
+								Home</a>
+							</li>
+							<li>
+								<a href="#abouttab" data-toggle="tab">
+								<span class="glyphicon glyphicon-info-sign"></span>
+								About</a>
+							</li>
+							<li>
+								<a href="#contactustab" data-toggle="tab">
+								<span class="glyphicon glyphicon-envelope"></span>
+								Contact Us</a>
+							</li>
+						</ul>	
+						
+					</div>
+					
+				</nav>	
+
+			</div>
+		</div>
+	</div>
+		
+		<div class="container">
+				<div class="tab-content">
+					<div id="hometab" class="tab-pane active fade in">
+							
+							<div class="container">
+									<div class="row">
+										<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+											<div class="mydiva img-responsive well hidden-xs"> 
+												<div class="abouttext">	
+													
+													<p>&quot;The challenge of life, I have found, is to build a<br/>resume that doesn't simply tell a story about what you<br/>want to be, but it's a story about who you want to be.&quot;</p>
+													<footer style="text-align: right; margin-right: 35px;">-Oprah Winfrey</footer>
+													
+									        	</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+											<div class="mydivb img-responsive well">	
+									            	<b>Would You Like To Make A Resume</b>?</br><br><br>
+									                already have an account? <br><br>
+									    		    <input class="btn btn-success" data-target="#loginModal" data-toggle="modal" type="button" name="login" value="Log-In" style="box-shadow: 1px 1px 1px 1px black;"><br>
+									    		    <h5 style="font-size: 10px;">OR</h5>
+									    		    Create an account<br><br>
+									    		    <input class="btn btn-primary" data-target="#signupModal" data-toggle="modal" type="button" name="signup" value="Sign-Up" style="box-shadow: 1px 1px 1px 1px black;"><br>	
+											</div>
+										</div>
+									</div>
+								</div>	
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="modal" id="loginModal" tabindex="-1">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button class="close" data-dismiss="modal">&times;</button>
+																<h4 class="modal-title">Login</h4>
+															</div>
+															<div class="modal-body">
+																<form action="Login" method="get">
+																	<div class="form-group" >
+																		<label for="inputemailid">Email ID</label>
+																		<input class="form-control" type="text" placeholder="First Name" id="inputemailid" data-toggle="tooltip" title="Hint:filled during Signup" name="username" />
+																	</div>
+																	<div class="form-group">
+																		<label for="inputpassword">Password</label>
+																		<input class="form-control" type="Password" placeholder="Login Password" id="inputpassword" name="password">
+																	</div>
+																
+															<!-- <div class="modal-footer">-->
+																<button class="btn btn-success"  type="submit">Login</button>
+																<button class="btn btn-primary" data-dismiss="modal">Close</button>
+															<!-- </div>-->
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>		
+									</div>
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="modal" id="signupModal" tabindex="-1">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button class="close" data-dismiss="modal">&times;</button>
+																<h4 class="modal-title">Signup</h4>
+															</div>
+															<div class="modal-body">
+																<form  action="Signup" method="get">
+																	<div class="form-group">
+																		<label for="inputfirstname">First Name</label>
+																		<input class="form-control" type="text" placeholder="First Name" id="inputfirstname" name="fname">
+																	</div>
+																	<div class="form-group">
+																		<label for="inputlastname">Last Name</label>
+																		<input class="form-control" type="text" placeholder="Last Name" id="inputlastname" name="lname">
+																	</div>
+																	<label for="inputgender">Gender</label>
+																	<select class="form-control"  name="gender">
+																		<option>Male</option>
+																		<option>Female</option>
+																		<option>Other</option>
+																	</select>
+																	<label for="inputcountry">Country</label>
+																	<select class="form-control" name="country">
+																		<option>India</option>
+																		<option>US</option>
+																		<option>UK</option>
+																		<option>China</option>
+																		<option>Russia</option>
+																		<option>Germany</option>
+																		<option>Other</option>
+																	</select>
+
+																	<div class="form-group">
+																		<label for="inputemailid">Email ID</label>
+																		<input class="form-control" type="email" placeholder="Email ID (Gmail,Rediff,etc)" id="inputemailid" data-toggle="tooltip" title="Will be used for Login purpose."  name ="email"/>
+																	</div>
+																	<div class="form-group">
+																		<label for="inputnewpassword">Password</label>
+																		<input class="form-control" type="Password" placeholder="New Password" id="inputnewpassword" data-toggle="tooltip" title="Will be used for Login purpose." name="password"/>
+																	</div>
+																
+															<!-- <div class="modal-footer"> -->
+																<button class="btn btn-success" type="submit">Submit</button>
+																<button class="btn btn-primary" data-dismiss="modal">Close</button>
+															<!-- </div> -->
+															</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+					</div>
+					<div id="abouttab" class="tab-pane fade">
+						
+						<div class="container">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="hero-text well">  
+						            <ul>
+						            <li><b>About:</b>
+						            <p>A "resume" is a one to two page formal document that lists a 
+						            job applicant's work experience, education and skills. A resume is
+						            designed to provide a detailed summary of an applicant's qualifications
+						            for a particular job - it is not usually meant to provide a complete picture.
+						            A good resume gives the potential employer enough
+						            information to believe the applicant is worth interviewing. A
+						            one-page cover letter, submitted along with the resume, can
+						            provide additional information about the applicant's qualifications.
+						            </p></li>
+						            <li>
+						            <b>Why is RESUME important?</b>
+						            <p>This is going to be your one and only chance to capture a potential
+						            employer's attention, or for your resume to be tossed into the file of those 
+						            they don't want to pursue. The statistics are that the average employer only
+						            spends a few seconds looking at a resume, so it is imperative that it makes an
+						            impression.</p></li>
+						            </ul>
+						</div>
+
+										</div>
+									</div>
+						</div>
+					</div>
+					<div id="contactustab" class="tab-pane fade">
+						
+						<div class="row">
+
+							<div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2  col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" >
+								<cite title="Ateeb">
+								<div class="acard img-responsive">
+								<img src="me.JPG" alt="ateeb" style="width:100%">
+						        <h2>S Ateebul Islam</h2>
+						        <p>Team Member 1</p>
+						        <p>+91-9958098566</p>
+						        <p>syedateebulislam@gmail.com</p>
+								</div>
+								</cite>
+							</div>
+
+							<div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2  col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+								<cite title="Kaushal">
+								<div class="acard img-responsive"> 
+								<img src="kaushal.jpg" alt="Kaushal" style="width:100%">
+								<h2>Kaushal Baghel</h2>
+						        <p>Team Memeber 2</p>
+						        <p>+91-8700628669</p>
+						        <p>kaushakbaghel96@gmail.com</p>
+						        </div>
+						    	</cite>
+							</div>
+						
+					</div>
+				</div>
+			</div>			
+		</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#inputemailid').tooltip()
+	});
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

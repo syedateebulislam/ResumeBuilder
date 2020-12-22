@@ -1,0 +1,8 @@
+.printHide
+{
+  visibility: hidden;
+}
+
+.printVisible{
+  visibility: visible;	
+}

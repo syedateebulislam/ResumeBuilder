@@ -1,0 +1,90 @@
+body, 
+html 
+{
+    height: 90%;
+    width: 90%;
+}
+body
+{
+	background : url("Background_Main.jpg") fixed ; 
+}
+ #signOutBtn
+ {
+ 	padding: 5px;
+ 	border-color:#704caf;
+ 	border-radius: 5%;
+    border-width: 1px;
+    margin-left: 1000px;
+    
+ }
+h1
+{
+	color: #704caf;
+	margin-top: 3%;	
+	margin-left: 40%;
+	font-family: impact,comic sans MS;
+	text-shadow: 5px 5px 5px black; 
+	font-size: 50px;
+	letter-spacing: 5px;
+	word-spacing: 16px;
+    position: relative;
+}
+h2
+{
+ text-align: center;
+ text-decoration: underline;
+}
+
+#hero-hmpgtxt 
+{
+  position: relative;
+  background-image: url("Edit_Page_Background.jpg") ;
+  width: 70%;
+  height: 202%; 
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  font-family: helvetica;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0 16px 20px 0 black;
+}
+.submitbutton 
+{
+    position: relative;
+    background-color: #35960f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10%;
+    border-width: 2px;
+}
+.submitbutton:hover
+{
+  background-color: #226009;
+ } 
+
+ .resetbutton 
+{
+    position: relative;
+    background-color: #b70000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10%;
+    border-width: 2px;
+}
+.resetbutton:hover
+{
+  background-color: #8c0e0e;
+ } 

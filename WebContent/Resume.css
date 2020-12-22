@@ -1,0 +1,10 @@
+body, 
+html 
+{
+    height: 90%;
+    width: 90%;
+}
+body
+{
+	background : url("Background_Main.jpg") fixed ; 
+}
